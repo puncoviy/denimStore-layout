@@ -203,8 +203,8 @@ body {
 .bestsellers__item-img {
     order: -1;
     margin-bottom: 25px;
-    width: 270px;
-    height: 349px;
+    max-width: 270px;
+    max-height: 349px;
     cursor: pointer;
 }
 
@@ -313,8 +313,8 @@ body {
 .categories__item-img {
     order: -1;
     margin-bottom: 25px;
-    width: 270px;
-    height: 349px;
+    max-width: 270px;
+    max-height: 349px;
 }
 .categories__item-title {
     font-weight: 500;
