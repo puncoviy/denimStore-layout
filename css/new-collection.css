@@ -1,5 +1,6 @@
 .new-collection {
     background-color: #F1F2F4;
+    margin-bottom: 40px;
 }
 .new-collection__inner {
     display: flex;
@@ -79,4 +80,122 @@
 .new-collection__img {
     max-width: 299px;
     max-height: 260px;
+}
+
+/* CATALOGUE */
+
+.new-collection-section {
+    margin-bottom: 130px;
+}
+
+.filters {
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.filters::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-style: none solid solid none;
+    border-width: 0 2px 2px 0;
+    border-color: #000;
+    right: 1px;
+    top: 1px;
+    pointer-events: none;
+    z-index: 1;
+    top: 20px;
+    right: 2%;
+    transform: rotate(45deg);
+}
+
+.new-collection__filters {
+    width: 243px;
+    padding: 18px;
+    background: none;
+    border: 2px solid #151C22;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151C22;
+    cursor: pointer;
+    outline: none;
+}
+
+.new-collection__list {
+    margin-top: 70px;
+    margin-bottom: 83px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 66px;
+}
+
+.new-collection__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-collection__item-img {
+    order: -1;
+    margin-bottom: 25px;
+    max-width: 243px;
+    max-height: 270px;
+    cursor: pointer;
+}
+
+.new-collection__item-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
+
+.new-collection__item-price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.new-collection__counter {
+    width: 200px;
+    margin: 0 auto 40px;
+}
+
+.new-collection__counter-text {
+    text-align: center;
+}
+
+.new-collection__counter-progress {
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    transition: all 1s;
+}
+
+::-webkit-progress-value {
+    background-color: #151C22;
+}
+  
+::-webkit-progress-bar {
+    background-color: #E5E5E5;
+}
+
+.new-collection__btn {
+    border: none;
+    padding: 27px 58px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
