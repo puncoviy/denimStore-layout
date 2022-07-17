@@ -71,11 +71,18 @@ body {
 }
 
 .promo__inner {
+    position: relative;
     display: flex;
     gap: 100px;
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.promo__next {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
 }
 
 .promo-info {
@@ -109,27 +116,30 @@ body {
     background-color: #151C22;
 }
 
-.promo__img {
+.promo__img-container {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
-.promo__img::before,
-.promo__img::after {
+.promo__img-container::before,
+.promo__img-container::after {
     position: absolute;
     content: "";
     width: 232px;
     height: 176px;
-    z-index: 2;
+    z-index: -1;
     background-image: url(../img/decor.svg);
 }
 
-.promo__img::before {
+.promo__img-container::before {
     top: -50px;
     left: -50px;
 }
 
-.promo__img::after {
-    bottom: 50px;
-    right: 50px;
+.promo__img-container::after {
+    transform: scaleX(-1);
+    bottom: -50px;
+    right: -50px;
 }
+
+/* BESTSELLERS */
