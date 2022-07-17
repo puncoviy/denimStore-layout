@@ -1,0 +1,135 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151C22;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+.header__menu {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header__menu * {
+    text-decoration: none;
+    color: #151C22;
+}
+
+.header__menu-list {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.header__menu-item+.header__menu-item {
+    margin-left: 35px;
+}
+
+.header__menu-logo {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    justify-self: center;
+}
+
+.header__menu-btn-item {
+    margin-left: 113px;
+}
+
+.header__menu-btn-item+.header__menu-btn-item {
+    margin-left: 35px;
+}
+
+/* PROMO */
+
+.promo {
+    background-color: #F1F2F4;
+}
+
+.promo__inner {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.promo-info {
+    margin-top: 142px;
+}
+
+.promo__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #727A82;
+    margin-bottom: 25px;
+}
+
+.promo__title {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 193px;
+    margin-bottom: 50px;
+}
+
+.promo__btn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 27px 24px;
+    background-color: #151C22;
+}
+
+.promo__img {
+    position: relative;
+    z-index: 1;
+}
+
+.promo__img::before,
+.promo__img::after {
+    position: absolute;
+    content: "";
+    width: 232px;
+    height: 176px;
+    z-index: 2;
+    background-image: url(../img/decor.svg);
+}
+
+.promo__img::before {
+    top: -50px;
+    left: -50px;
+}
+
+.promo__img::after {
+    bottom: 50px;
+    right: 50px;
+}
