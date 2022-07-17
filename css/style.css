@@ -86,6 +86,21 @@ body {
     left: 0;
 }
 
+.promo__next-img {
+    animation: transform 5s ease-out .25s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes transform {
+    3%, 9% {
+        transform:translateY(5px)
+    }
+
+    6%, 12% {
+        transform:translateY(0)
+    }
+}
+
 .promo-info {
     margin-top: 142px;
 }
@@ -105,6 +120,7 @@ body {
     font-size: 128px;
     line-height: 193px;
     margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
 .btn {
@@ -232,9 +248,28 @@ body {
     height: 462px;
     top: -31px;
     left: 0;
-    background-image: url(../img/decor.svg);
-    background-size: cover;
+    background-image: url(../img/decor-repeat.svg);
+    background-size: contain;
+    -webkit-animation: displace 15s linear infinite;
+    animation: displace 15s linear infinite;
 }
+
+@-webkit-keyframes displace {
+    from {
+      background-position: 0 center;
+    }
+    to {
+      background-position: 442px center;
+    }
+  }
+  @keyframes displace {
+    from {
+      background-position: 0 center;
+    }
+    to {
+      background-position: 442px center;
+    }
+  }
 
 .news__info-title {
     font-weight: 700;
