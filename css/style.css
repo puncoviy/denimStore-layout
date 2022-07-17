@@ -262,3 +262,26 @@ body {
 }
 
 /* CATEGORY */
+
+.categories__list {
+    margin-top: 70px;
+    margin-bottom: 130px;
+    display: flex;
+    gap: 30px;
+}
+.categories__item {
+    display: flex;
+    flex-direction: column;
+}
+.categories__item-img {
+    order: -1;
+    margin-bottom: 25px;
+    width: 270px;
+    height: 349px;
+}
+.categories__item-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
