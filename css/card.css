@@ -1,0 +1,99 @@
+.card-info {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, transparent, transparent 70%, #F1F2F4 70%);
+}
+.card-info__photo-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 130px;
+}
+.card-info__img {
+    width: 400px;
+    height: 523px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card-info__min {
+    display: flex;
+    gap: 20px;
+}
+.card-info__min-img {
+    width: 85px;
+    height: 113px;
+    object-fit: cover;
+}
+.card-info__details {
+    background-color: #F1F2F4;
+    padding: 70px 0 70px 70px;
+}
+.card-info__title {
+    margin-bottom: 40px;
+}
+.card-info__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 50px;
+    max-width: 370px;
+}
+.card-info__option {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+.card-info__color-box {
+    display: flex;
+    gap: 27px;
+    margin-bottom: 40px;
+}
+.card-info__color-box input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    transition: 0.2s all linear;
+}
+.card-info__color-box input:checked {
+    outline: 3px solid #151C22 !important;
+}
+#green {
+    background: #B0C3C7;
+    outline: 1px solid #B0C3C7;
+}
+#blue {
+    background: #3B6392;
+    outline: 1px solid #3B6392;
+}
+#grey {
+    background: #BFC3C8;
+    outline: 1px solid #BFC3C8;
+}
+.card-info__size-box{
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+}
+.card-info__size {
+    color: #727A82;
+}
+.card-info__size.selected {
+    color: #151C22;
+}
+.card-info__price {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 50px;
+}
+.card-info__btn {
+    padding: 27px 55px;
+    border: none;
+    display: block;
+}
