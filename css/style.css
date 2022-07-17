@@ -285,3 +285,44 @@ body {
     line-height: 21px;
     margin-bottom: 15px;
 }
+
+/* FOOTER */
+
+.footer {
+    background-color: #151C22;
+    padding: 50px 0;
+}
+
+.footer__inner {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.footer__menu-list {
+    display: flex;
+    gap: 35px;
+}
+
+.footer__menu-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 30px;
+}
