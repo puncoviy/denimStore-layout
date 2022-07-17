@@ -205,6 +205,7 @@ body {
     margin-bottom: 25px;
     width: 270px;
     height: 349px;
+    cursor: pointer;
 }
 
 .bestsellers__item-title {
@@ -307,6 +308,7 @@ body {
 .categories__item {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .categories__item-img {
     order: -1;
