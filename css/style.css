@@ -196,8 +196,31 @@ body {
 }
 
 .bestsellers__item {
+    position: relative;
+}
+
+.bestsellers__item::after {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    content: "";
+    width: 232px;
+    height: 176px;
+    z-index: -1;
+    background-image: url(../img/decor.svg);
+    transition: all .7s;
+}
+
+.bestsellers__item:hover::after {
+    bottom: 60px;
+    right: -20px;
+}
+
+.bestsellers__item-link {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
 }
 
 .bestsellers__item-img {
@@ -305,17 +328,42 @@ body {
     display: flex;
     gap: 30px;
 }
+
 .categories__item {
+    position: relative;
+}
+
+.categories__item::after {
+    position: absolute;
+    bottom: 61px;
+    right: 0;
+    content: "";
+    width: 232px;
+    height: 176px;
+    z-index: -1;
+    background-image: url(../img/decor.svg);
+    transition: all .7s;
+}
+
+.categories__item:hover::after {
+    bottom: 41px;
+    right: -20px;
+}
+
+.categories__item-link {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
+
 .categories__item-img {
     order: -1;
     margin-bottom: 25px;
     max-width: 270px;
     max-height: 349px;
 }
+
 .categories__item-title {
     font-weight: 500;
     font-size: 18px;
